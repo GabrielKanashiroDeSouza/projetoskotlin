@@ -1,0 +1,27 @@
+import com.sun.org.apache.xalan.internal.xsltc.compiler.sym.INT
+
+/**
+ * You can edit, run, and share this code. 
+ * play.kotlinlang.org 
+ */
+ 
+fun main() {
+    
+    val x:Int
+    val y:Int
+    x=4
+    y=2
+    var z:Int
+      
+ z= calculate(x,y){a,b->a-b}
+    println(z)
+ z=calculate(x,y,::sum)
+    println(z)
+}
+
+fun sum(a1:Int,a2:Int)=a1.plus(a2)
+
+fun calculate(n1:Int,n2:Int,operation:(Int,Int)->Int):Int{
+    val result=operation(n1,n2)
+    return result
+}
