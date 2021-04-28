@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ApplicationContentProvider2</string>
+    <string name="note_title_hint">note_title_hint</string>
+    <string name="note_description_hint">note_description_hint</string>
+</resources>
